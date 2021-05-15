@@ -17,11 +17,12 @@ I have my dev branches in my github fork pizzamig/freebsd-ports.
 ## Before to commit
 
 Update the local repo with:
-```
+```console
+pre-commit
+# or explicitely
 git checkout main
 git pull --ff-only
 git fecth pizzamig
-
 ```
 
 ## Prepare to merge the PR
