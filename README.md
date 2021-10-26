@@ -51,8 +51,12 @@ Now, be prepared to write the commit message:
 
 ```
 git commit
+# if patch provided by a 3rd person:
+git commit --author A U Thor <author@example.com>
 git log -1 # to get the hash
 git push freebsd $hash:main
+# if patch provided by a 3rd person
+git push --push-option=confirm-author freebsd $hash:main
 ```
 
 If the push failed because in the meantime someone else committed something else:
