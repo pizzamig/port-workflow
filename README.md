@@ -59,6 +59,12 @@ git push freebsd $hash:main
 git push --push-option=confirm-author freebsd $hash:main
 ```
 
+If committing a PR submitted by a contributor:
+```
+git commit --author="Jose Luis Duran <jlduran@gmail.com>"
+git log -1 # to get the hash
+git push --push-option=confirm-author freebsd $hash:main
+```
 If the push failed because in the meantime someone else committed something else:
 ```
 git pull --rebase
